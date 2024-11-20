@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body style="background:url('./background.jpg')">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Virtual Assistant Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            padding: 15px 30px;
+            background-color: #E67E22;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .cta-btn:hover {
+            background-color: #D35400;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        .service-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service-box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .service-box p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .service-box a {
+            color: #2C3E50;
+            text-decoration: none;
+        }
+        .service-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* About Me Section */
+        .about {
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+            margin: 0 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .about h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        .about p {
+            font-size: 18px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 50px;
+            text-align: center;
+        }
+        .testimonials h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .testimonial-boxes {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .testimonial-box {
+            background-color: white;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-box p {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .testimonial-box h4 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #2C3E50;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 15px 30px;
+            background-color: #E67E22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .contact-form button:hover {
+            background-color: #D35400;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <h1>Virtual Assistant Services</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div>
+        <h1>Your Personal Virtual Assistant</h1>
+        <p>Helping You Save Time and Achieve More</p>
+        <a href="#contact" class="cta-btn">Book a Free Consultation</a>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="service-box">
+        <h3>Time Management</h3>
+        <p>Streamline your schedule and maximize productivity.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="service-box">
+        <h3>Email & Calendar Management</h3>
+        <p>Stay on top of your communications and appointments.</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div class="service-box">
+        <h3>Customer Support</h3>
+        <p>Efficiently manage customer inquiries and support.</p>
+        <a href="#">Learn More</a>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="about">
+<body style="background:url('./myown.png')">
+    <img src="asdad.jpg" alt="asdad">
+    <h2>About Me</h2>
+	<p>Hi, My Name is Rommelson Malveda, You can call me Khing.</P>
+	<p>First, Let me introduce myself as a Self-Motivated individual and a competent one at that. I'm 4th year undergraduate with a course of Bachelor of Science in Information System, 
+I am a Technical Support with a background of BPO agent, my task is to Provide technical support and troubleshooting assistance to the customer. Capability to assist customer with highly detailed information to help the customer to follow easily. Walk customers through step-by-step solutions and ensure their understanding. Also got an experience of doing Inbound , Outbound and Cold Calling to the customers.
+	<br><br>
+I am also an Admin Assistant where i do task : Answering phones, Email management, Filing and documentation, Scheduling appointments, Calendar Management, Data Entry and Record Keeping, and other Miscellaneous Tasks.
+Additional skill is editing photos with the use of adobe photoshop also doing Graphic Design using Canva tool.
+	<br><br>
+I am a Team player, Hardworking, Fast Learner,consecutively seeking knowledge, Exciting to work with, Flexible, Passionate and Eager to learn new things, I can communicate well in English to assure good service.
+	<br><br>
+I can be very useful in your team, since my main objective to my clients is to give an Outstanding Results, Long Term Relationship, Professionalism and leave them 100% satisfied with my work.</p>
+	<br><br>
+<p>List of Skill i can contribute to the team:</p>
+<p>Strong organizational and multitasking abilities</p>
+<p>Excellent communication and interpersonal skills</p>
+<p>Proficiency in office software (e.g., Microsoft Office Suite, Google Workspace, LibreOffice)</p>
+<p>Attention to detail and problem-solving skills</p>
+<p>Discretion and confidentiality</p>
+<p>Time Management</p>
+	<br><br>
+<p>I am ready to move forward with you and I look forward to hearing from you to enable us further discuss the opportunity. I'm eager to work with you , Don't hesitate to reach me out.</p>
+
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <h2>What Clients Are Saying</h2>
+    <div class="testimonial-boxes">
+        <div class="testimonial-box">
+            <p>"Incredibly efficient and helpful! My productivity has increased thanks to their support."</p>
+            <h4>Erica D.</h4>
+        </div>
+        <div class="testimonial-box">
+            <p>"A lifesaver for managing my business tasks. Highly recommended!"</p>
+            <h4>Erica C.</h4>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-form">
+        <form action="submit-form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="How can I assist you?" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
